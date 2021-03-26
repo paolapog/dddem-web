@@ -1,3 +1,4 @@
+import React from 'react';
 import theme from '../theme/theme';
 import Head from 'next/head';
 import Header from '../components/Header';
@@ -30,7 +31,6 @@ export default function Index() {
         /static/banners/pride-header.jpg"
               />
             );
-            break;
           case 9:
           case 10:
           case 11:
@@ -41,7 +41,6 @@ export default function Index() {
             /static/banners/autumn-header.jpg"
               />
             );
-            break;
           case 12:
             return (
               <Header
@@ -50,7 +49,6 @@ export default function Index() {
         /static/banners/christmas-header.jpg"
               />
             );
-            break;
           default:
             return (
               <Header
@@ -68,6 +66,7 @@ export default function Index() {
           Returning 2nd October 2021 at
           <br />
           <a
+            rel="noopener noreferrer"
             href="https://www.dddeastmidlands.com/information/venue-information/"
             target="_blank"
           >

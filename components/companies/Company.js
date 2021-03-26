@@ -1,3 +1,4 @@
+import React from 'react';
 import theme from '../../theme/theme';
 import ExternalLink from '../ExternalLink';
 
@@ -9,6 +10,7 @@ export default function Company({ partner, image }) {
         target="_blank"
         category="logo"
         eventType={partner.name}
+        rel="noopener noreferrer"
       >
         <img
           src={image}
